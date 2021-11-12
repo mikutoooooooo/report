@@ -28,10 +28,18 @@ public class Enemy {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
+    /** 
+     * gettrメソッド。
+     * 外部のクラスからフィールドにアクセスするために必要。
+    */
+
     public String getName(){
         return this.name;
     }
-
+    /** 
+     * gettrメソッド。
+     * 外部のクラスからフィールドにアクセスするために必要。
+    */
     public boolean getdead(){
         return this.dead;
     }
@@ -39,6 +47,7 @@ public class Enemy {
     /**
      * Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
+     * モンスターが死亡後は０攻撃。
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
