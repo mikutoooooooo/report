@@ -17,7 +17,7 @@ class EnemyTest {
         }
         
         slime.attack(demoHero);
-        assertEquals(defaultHeroHp, demoHero.gethitpoint());
+        assertEquals(defaultHeroHp, demoHero.hitPoint);
     }
 
 }
